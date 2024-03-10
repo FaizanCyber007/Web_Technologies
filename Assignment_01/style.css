@@ -13,9 +13,9 @@
 .backgroundImage {
   background: url(images/nasa-Q1p7bh3SHj8-unsplash.jpg);
   width: 100%;
-  height: 40vw;
+  height: 50vw;
   background-repeat: no-repeat;
-  background-position-y: top;
+  background-position-y: bottom;
   background-size: 100%;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,9 @@
   font-family: "Lato";
   font-size: 1.3vw;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  border: 2px solid rgb(255, 0, 0);
+  padding: 1.5%;
 }
 .specialization {
   font-family: montserrat, helvetica neue, Arial, sans-serif;
@@ -33,9 +35,55 @@
   height: 11vw;
   border-radius: 500px;
 }
+.contactDetails {
+  display: flex;
+  justify-content: center;
+  padding: 2% 0px;
+  gap: 4%;
+  width: 50%;
+}
+.social-media {
+  width: 5.5%;
+  padding: 1%;
+  box-sizing: unset;
+}
+.social-media1 {
+  display: contents;
+}
+.social-media:hover {
+  border-radius: 40px;
+  background-color: rgb(128, 102, 102, 0.5);
+}
 a {
   text-decoration: none;
   color: antiquewhite;
+}
+.about-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  width: 80%;
+  gap: 2%;
+  background-color: rgb(128, 102, 102, 0.7);
+  border: 2px solid rgb(128, 102, 102);
+  z-index: 20;
+}
+.about-me,
+.basic-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 50%;
+  padding: 2% 0px;
+  gap: 2%;
+  font-size: 80%;
+  z-index: 20;
+}
+.basic {
+  display: flex;
+  gap: 2vw;
 }
 #navBar {
   display: flex;
@@ -72,13 +120,51 @@ a {
   background-color: #394962;
   border-color: #394962;
 }
-#education {
+#skills {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  gap: 1.2vw;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 70%;
+  margin-bottom: 1em;
+  gap: 1vw;
+  box-sizing: border-box;
+}
+
+.skill-bar {
+  flex-grow: 1;
+  background-color: antiquewhite;
+  margin-left: 1vw;
+  border-radius: 5px;
+  height: 2vw;
+}
+.skill-level {
+  height: 100%;
+  background-color: rgb(128, 102, 102);
+  border-radius: 5px;
+}
+.skill-name {
+  font-size: 1.6vh;
+  font-family: "Lato";
+  color: rgb(128, 102, 102);
+}
+#education,
+#work {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* padding: 1.2vw; */
-  /* padding: 20px 0px; */
 }
 .education-heading {
   font-size: 2.5vw;
@@ -111,7 +197,7 @@ a {
 .education-container {
   border: 0.3vw solid rgb(128, 102, 102);
   display: flex;
-  width: 70%;
+  width: 60%;
   margin: 0.4%;
   height: 13vw;
   box-shadow: 0.5vw 0.5vw 10px rgba(0, 0, 0, 0.3),
@@ -130,4 +216,46 @@ a {
   font-size: 0.9vw;
   padding: 0px 2vw;
   overflow: hidden;
+}
+.form-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  width: 50vw;
+  /* height: 5vw; */
+}
+
+.form-group label {
+  margin-bottom: 0.5em;
+  font-size: 1.5vh;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  height: 3vh;
+  padding: 0.5em;
+  box-sizing: border-box;
+}
+.submit-btn {
+  max-width: 30%;
+  height: 3vh;
+  background-color: rgb(128, 102, 102);
+  color: antiquewhite;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1.5vh;
+  font-family: "Lato";
+  margin-top: 1em;
+  place-self: center;
 }
