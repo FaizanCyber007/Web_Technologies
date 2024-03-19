@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#background-image {
+  background-image: url("images/image.png");
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* background-position: center; */
+  height: 50vw;
+  /* width: 100%; */
+  /* position: relative; */
+}
+/* #navBar {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+} */
+.descrip {
+  font-size: 4vw;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.journey-heading {
+  font-size: 3vw;
+}
