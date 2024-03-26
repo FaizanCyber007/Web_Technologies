@@ -8,20 +8,35 @@
   background-size: 100vw;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* background-position: center; */
   height: 50vw;
-  /* width: 100%; */
-  /* position: relative; */
 }
-/* #navBar {
-  position: fixed;
-  width: 100%;
-  z-index: 100;
-} */
 .descrip {
   font-size: 4vw;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .journey-heading {
   font-size: 3vw;
+}
+.service-img {
+  width: 5vw;
+  height: 5vw;
+}
+.services {
+  font-size: 1vw;
+  padding: 2vw 5vw;
+  border-radius: 3vw;
+  color: white;
+}
+
+.social-media {
+  width: 5.5%;
+  padding: 1%;
+  box-sizing: unset;
+}
+.social-media1 {
+  display: contents;
+}
+.social-media:hover {
+  border-radius: 40px;
+  background-color: rgb(128, 102, 102, 0.5);
 }
